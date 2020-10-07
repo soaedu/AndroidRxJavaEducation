@@ -38,6 +38,7 @@ dependencies {
 
     // Support libraries
     implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     // Unit testing
     testImplementation "junit:junit:4.12"
@@ -47,5 +48,4 @@ dependencies {
 
     // UI testing
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
 }
