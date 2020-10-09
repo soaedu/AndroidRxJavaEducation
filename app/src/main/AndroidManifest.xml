@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- #1 -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,34 +19,17 @@
             </intent-filter>
         </activity>
 
-        <!-- #1-->
-        <activity
-            android:name=".observable.ObservableActivity"
-            android:parentActivityName=".MainActivity" />
+        <!-- #2 -->
         <activity
             android:name=".subject.SubjectActivity"
             android:parentActivityName=".MainActivity" />
 
-        <!-- #2-->
-        <activity
-            android:name=".observable.operator.ObservableOperatorActivity"
-            android:parentActivityName=".observable.ObservableActivity" />
-        <activity
-            android:name=".observable.type.ObservableTypeActivity"
-            android:parentActivityName=".observable.ObservableActivity" />
-
-        <!-- #3-->
-        <activity
-            android:name=".observable.operator.creating.ObservableCreatingActivity"
-            android:parentActivityName=".observable.operator.ObservableOperatorActivity" />
-        <activity
-            android:name=".observable.operator.transforming.ObservableTransformingActivity"
-            android:parentActivityName=".observable.operator.ObservableOperatorActivity" />
+        <!-- #3 -->
         <activity
             android:name=".subject.publish_subject.PublishSubjectActivity"
             android:parentActivityName=".subject.SubjectActivity" />
 
-        <!-- #4-->
+        <!-- #4 -->
         <activity
             android:name=".subject.publish_subject.example1.AlertDialogChainActivity"
             android:parentActivityName=".subject.publish_subject.PublishSubjectActivity" />

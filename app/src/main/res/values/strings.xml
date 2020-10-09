@@ -3,24 +3,14 @@
     <string name="observable_creating">Observable creating</string>
     <string name="observable_transforming">Observable transforming</string>
     <string name="alert_dialog_chain">Alert Dialog Chain</string>
+    <string name="observable">Observable</string>
 
     <!-- #1-->
     <string-array name="RxTheme">
-        <item>Observable</item>
         <item>Subject</item>
     </string-array>
 
     <!-- #2-->
-    <string-array name="RxObservable">
-        <item>Operator</item>
-        <item>Type</item>
-    </string-array>
-
-    <!-- #3-->
-    <string-array name="RxOperator">
-        <item>Creating</item>
-        <item>Transforming</item>
-    </string-array>
     <string-array name="RxSubject">
         <item>PublishSubject</item>
     </string-array>
