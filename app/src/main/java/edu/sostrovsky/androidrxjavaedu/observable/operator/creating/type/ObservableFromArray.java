@@ -1,11 +1,11 @@
-package edu.sostrovsky.androidrxjavaedu.code.create;
+package edu.sostrovsky.androidrxjavaedu.observable.operator.creating.type;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import io.reactivex.Observable;
 
-public class ObservableCreateFromArray {
+public class ObservableFromArray {
     public static void print() {
         printThreeItemsFromArray();
     }

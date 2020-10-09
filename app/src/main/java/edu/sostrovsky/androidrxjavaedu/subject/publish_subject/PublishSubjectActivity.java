@@ -1,34 +1,34 @@
-package edu.sostrovsky.androidrxjavaedu;
+package edu.sostrovsky.androidrxjavaedu.subject.publish_subject;
 
-import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import edu.sostrovsky.androidrxjavaedu.observable.operator.ObservableOperatorActivity;
+import edu.sostrovsky.androidrxjavaedu.R;
 import edu.sostrovsky.androidrxjavaedu.subject.SubjectActivity;
+import edu.sostrovsky.androidrxjavaedu.subject.publish_subject.example1.AlertDialogChainActivity;
+import edu.sostrovsky.androidrxjavaedu.subject.publish_subject.example2.HandleSearchTextChangeActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class PublishSubjectActivity extends AppCompatActivity {
     private ListView listView;
 
-    @SuppressLint("CheckResult")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_publish_subject);
 
         setList();
     }
 
     private void setList() {
-        String[] rxThemes = getResources().getStringArray(R.array.RxTheme);
+        String[] rxExamples = getResources().getStringArray(R.array.RxPublishSubjectExample);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_expandable_list_item_1, rxThemes);
-        listView = (ListView) findViewById(R.id.lvThemeList);
+                android.R.layout.simple_expandable_list_item_1, rxExamples);
+        listView = (ListView) findViewById(R.id.lvPublishSubjectExampleList);
         listView.setAdapter(adapter);
 
         setClickListener();
@@ -37,14 +37,14 @@ public class MainActivity extends AppCompatActivity {
     private void setClickListener() {
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = null;
-            Context context = MainActivity.this;
+            Context context = PublishSubjectActivity.this;
 
             switch (position) {
                 case 0:
-                    intent = new Intent(context, ObservableOperatorActivity.class);
+                    intent = new Intent(context, AlertDialogChainActivity.class);
                     break;
                 case 1:
-                    intent = new Intent(context, SubjectActivity.class);
+                    intent = new Intent(context, HandleSearchTextChangeActivity.class);
                     break;
             }
 

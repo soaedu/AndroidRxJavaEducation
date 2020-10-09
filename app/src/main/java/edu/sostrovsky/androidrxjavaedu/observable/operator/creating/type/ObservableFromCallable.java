@@ -1,4 +1,4 @@
-package edu.sostrovsky.androidrxjavaedu.code.create;
+package edu.sostrovsky.androidrxjavaedu.observable.operator.creating.type;
 
 import android.annotation.SuppressLint;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import io.reactivex.Observable;
 
-public class ObservableCreateFromCallable {
+public class ObservableFromCallable {
     public static void print() {
         // printResultFromCallable();
         // printErrorFromCallable();

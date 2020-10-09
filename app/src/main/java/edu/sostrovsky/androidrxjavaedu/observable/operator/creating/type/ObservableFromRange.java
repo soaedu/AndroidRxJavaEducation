@@ -1,8 +1,8 @@
-package edu.sostrovsky.androidrxjavaedu.code.create;
+package edu.sostrovsky.androidrxjavaedu.observable.operator.creating.type;
 
 import io.reactivex.Observable;
 
-public class ObservableCreateFromRange {
+public class ObservableFromRange {
     public static void print() {
         printThreeItemsFromRange();
     }

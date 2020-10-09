@@ -1,4 +1,4 @@
-package edu.sostrovsky.androidrxjavaedu.code.create;
+package edu.sostrovsky.androidrxjavaedu.observable.operator.creating.type;
 
 import android.annotation.SuppressLint;
 
@@ -7,7 +7,7 @@ import java.util.List;
 
 import io.reactivex.Observable;
 
-public class ObservableCreateFromEmitter {
+public class ObservableFromEmitter {
     public static void print() {
         printThreeItemsFromEmitter();
     }

@@ -1,11 +1,11 @@
-package edu.sostrovsky.androidrxjavaedu.code.create;
+package edu.sostrovsky.androidrxjavaedu.observable.operator.creating.type;
 
 import java.util.Set;
 import java.util.TreeSet;
 
 import io.reactivex.Observable;
 
-public class ObservableCreateFromIterable {
+public class ObservableFromIterable {
     public static void print() {
         printThreeItemsFromArray();
     }

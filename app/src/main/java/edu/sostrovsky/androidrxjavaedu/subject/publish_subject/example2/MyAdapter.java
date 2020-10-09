@@ -1,4 +1,4 @@
-package edu.sostrovsky.androidrxjavaedu;
+package edu.sostrovsky.androidrxjavaedu.subject.publish_subject.example2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import edu.sostrovsky.androidrxjavaedu.R;
 
 public class MyAdapter extends RecyclerView.Adapter {
 

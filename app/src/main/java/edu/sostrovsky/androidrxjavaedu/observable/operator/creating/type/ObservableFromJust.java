@@ -1,14 +1,14 @@
-package edu.sostrovsky.androidrxjavaedu.code.create;
+package edu.sostrovsky.androidrxjavaedu.observable.operator.creating.type;
 
 import io.reactivex.Observable;
 
-public class ObservableCreateWithJust {
+public class ObservableFromJust {
     public static void print() {
-        // ObservableJust.printOneString();
-        // ObservableJust.printThreeStrings();
-        // ObservableJust.printThreeStringsShowError();
-        // ObservableJust.printThreeStringsShowComplete();
-        // ObservableJust.printThreeStringsConcatenated();
+         printOneString();
+//         printThreeStrings();
+//         printThreeStringsShowError();
+//         printThreeStringsShowComplete();
+//         printThreeStringsConcatenated();
     }
 
     // will produce one strings
