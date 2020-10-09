@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import edu.sostrovsky.androidrxjavaedu.observable.operator.ObservableOperatorActivity;
+import edu.sostrovsky.androidrxjavaedu.observable.ObservableActivity;
 import edu.sostrovsky.androidrxjavaedu.subject.SubjectActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    intent = new Intent(context, ObservableOperatorActivity.class);
+                    intent = new Intent(context, ObservableActivity.class);
                     break;
                 case 1:
                     intent = new Intent(context, SubjectActivity.class);

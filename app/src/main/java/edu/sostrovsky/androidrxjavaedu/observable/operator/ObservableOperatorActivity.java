@@ -5,12 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import edu.sostrovsky.androidrxjavaedu.MainActivity;
 import edu.sostrovsky.androidrxjavaedu.R;
 import edu.sostrovsky.androidrxjavaedu.observable.operator.creating.ObservableCreatingActivity;
 import edu.sostrovsky.androidrxjavaedu.observable.operator.transforming.ObservableTransformingActivity;
@@ -27,7 +24,7 @@ public class ObservableOperatorActivity extends AppCompatActivity {
     }
 
     private void setList() {
-        String[] rxObservableOperators = getResources().getStringArray(R.array.ObservableOperator);
+        String[] rxObservableOperators = getResources().getStringArray(R.array.RxOperator);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_expandable_list_item_1, rxObservableOperators);
         listView = (ListView) findViewById(R.id.lvOperatorList);
