@@ -10,6 +10,7 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.sostrovsky.androidrxjavaedu.subject.SubjectActivity;
+import edu.sostrovsky.androidrxjavaedu.subscription.SubscriptionActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
             switch (position) {
                 case 0:
                     intent = new Intent(context, SubjectActivity.class);
+                    break;
+                case 1:
+                    intent = new Intent(context, SubscriptionActivity.class);
                     break;
             }
 
