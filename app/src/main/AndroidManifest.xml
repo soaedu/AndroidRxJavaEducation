@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- #1 -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- #2 -->
+        <activity
+            android:name=".subject.SubjectActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".subscription.SubscriptionActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- #3 -->
+        <activity
+            android:name=".subject.publish_subject.PublishSubjectActivity"
+            android:parentActivityName=".subject.SubjectActivity" /> <!-- #4 -->
+        <activity
+            android:name=".subject.publish_subject.example1.AlertDialogChainActivity"
+            android:parentActivityName=".subject.publish_subject.PublishSubjectActivity" />
+        <activity
+            android:name=".subject.publish_subject.example2.HandleSearchTextChangeActivity"
+            android:parentActivityName=".subject.publish_subject.PublishSubjectActivity" />
     </application>
 
 </manifest>

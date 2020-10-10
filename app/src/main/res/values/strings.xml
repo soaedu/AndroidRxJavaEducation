@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">AndroidRxJavaEdu</string>
+    <string name="observable_creating">Observable creating</string>
+    <string name="observable_transforming">Observable transforming</string>
+    <string name="alert_dialog_chain">Alert Dialog Chain</string>
+    <string name="observable">Observable</string>
+    <string name="subscription">Subscription</string>
+
+    <!-- #1-->
+    <string-array name="RxTheme">
+        <item>Subject</item>
+        <item>Subscription</item>
+    </string-array>
+
+    <!-- #2-->
+    <string-array name="RxSubject">
+        <item>PublishSubject</item>
+    </string-array>
+
+    <!-- #4-->
+    <string-array name="RxPublishSubject">
+        <item>AlertDialogChain</item>
+        <item>HandleSearchTextChange</item>
+    </string-array>
+
 </resources>
